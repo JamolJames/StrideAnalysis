@@ -134,7 +134,7 @@ public class StrideVisualizer : MonoBehaviour
         // Check if the collision is with the foot
         if (collision.gameObject.CompareTag("Foot"))
         {
-            Debug.Log("Collision detected with foot!");
+            // Debug.Log("Collision detected with foot!");
 
             // Start measuring contact time
             contactStartTime = Time.time;
@@ -143,13 +143,13 @@ public class StrideVisualizer : MonoBehaviour
             // Iterate through all the contact points
             foreach (ContactPoint contact in collision.contacts)
             {
-                Debug.Log("Contact point: " + contact.point);
+                // Debug.Log("Contact point: " + contact.point);
 
                 // Calculate distance from the last collision point
                 if (hasLastCollision)
                 {
                     float distance = Vector3.Distance(lastCollisionPosition, contact.point);
-                    Debug.Log("Distance from last collision: " + distance + " meters");
+                    // Debug.Log("Distance from last collision: " + distance + " meters");
 
                     // Update the distance on the screen
                     distanceDisplay.UpdateDistance(distance);
@@ -192,7 +192,7 @@ public class StrideVisualizer : MonoBehaviour
             isFootInContact = false;
 
             // Display the contact duration
-            Debug.Log("Foot contact duration: " + contactDuration + " seconds");
+            // Debug.Log("Foot contact duration: " + contactDuration + " seconds");
             contactDisplay.UpdateContactTime(contactDuration); // Assuming you have this method in your ContactTimeDisplay script
         }
     }
