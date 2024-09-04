@@ -1,23 +1,25 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MapTransformer : MonoBehaviour
 {
+    [SerializeField] float scaleAmt = 1;
 
-    public Slider scaleSlider;
-    float scaleSliderNumber;
     float rotationAmt = 20f;
+
+    // Transform thisTransform;
+    Vector3 objectScale;
 
     void Start() 
     {
-
+        Transform thisTransform = GetComponent<Transform>();
+        objectScale = thisTransform.localScale;
         
     }
 
     void Update()
     {
         RotateScene();
-        ScaleScene();
+        ScaleScene(scaleAmt);
     }
 
     void RotateScene()
@@ -32,12 +34,15 @@ public class MapTransformer : MonoBehaviour
         }
     }
 
-
-    void ScaleScene()
+    void ScaleScene(float scale)
     {
-        scaleSliderNumber = scaleSlider.value;
-        Vector3 scale = new Vector3(scaleSliderNumber, scaleSliderNumber, scaleSliderNumber);
-        this.transform.localScale = scale;
+        if(Input.GetKey(KeyCode.X)) // TODO: change keycode to VR controller
+        {
+            // transform.localScale = new Vector3(scale, scale, scale);
+            Debug.Log(scale);
+            // objectScale * scale;
+        }
+        // objectScale * scaleAmt;
     }
 
     void ApplyRotation(float rotateThisFrame)
