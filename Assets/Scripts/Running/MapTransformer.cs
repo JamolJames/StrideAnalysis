@@ -1,53 +1,63 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MapTransformer : MonoBehaviour
 {
-    [SerializeField] float scaleAmt = 1;
-
+    public Slider scaleSlider;
+    public Slider rotationSlider;
+    private float scaleSliderNumber;
+    private float rotationSliderNumber;
     float rotationAmt = 20f;
+    float scaleAmt = 20f; 
 
     // Transform thisTransform;
     Vector3 objectScale;
 
     void Start() 
     {
-        Transform thisTransform = GetComponent<Transform>();
-        objectScale = thisTransform.localScale;
+        // Transform thisTransform = GetComponent<Transform>();
+        // objectScale = thisTransform.localScale;
         
     }
 
     void Update()
     {
-        RotateScene();
-        ScaleScene(scaleAmt);
+        // RotateScene();
+        ApplyRotation();
+        ScaleScene();
     }
 
-    void RotateScene()
+    // void RotateScene()
+    // {
+    //     if (Input.GetKey(KeyCode.S)) // TODO: change keycode to VR controller 
+    //     {
+    //         ApplyRotation(rotationAmt);
+    //     }
+    //     else if (Input.GetKey(KeyCode.D))
+    //     {
+    //         ApplyRotation(-rotationAmt);
+    //     }
+    // }
+
+    void ScaleScene()
     {
-        if (Input.GetKey(KeyCode.S)) // TODO: change keycode to VR controller 
-        {
-            ApplyRotation(rotationAmt);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            ApplyRotation(-rotationAmt);
-        }
+        // TODO: change keycode to VR controller
+            scaleSliderNumber = scaleSlider.value * scaleAmt;
+            Vector3 scale = new Vector3(scaleSliderNumber, scaleSliderNumber,scaleSliderNumber);
+            transform.localScale = scale;
     }
 
-    void ScaleScene(float scale)
-    {
-        if(Input.GetKey(KeyCode.X)) // TODO: change keycode to VR controller
-        {
-            // transform.localScale = new Vector3(scale, scale, scale);
-            Debug.Log(scale);
-            // objectScale * scale;
-        }
-        // objectScale * scaleAmt;
-    }
+    // void ApplyRotation(float rotateThisFrame)
+    // {
+    //     rotationSliderNumber = rotationSlider.value * rotationAmt;
+    //     transform.Rotate(Vector3.up * Time.deltaTime * rotateThisFrame);
+    // }
 
-    void ApplyRotation(float rotateThisFrame)
+    void ApplyRotation()
     {
-        transform.Rotate(Vector3.up * Time.deltaTime * rotateThisFrame);
+        rotationSliderNumber = rotationSlider.value * rotationAmt;
+        Vector3 rotate = new Vector3(0,rotationSliderNumber,0);
+        transform.rotation = Quaternion.Euler(rotate);
     }
 
 
