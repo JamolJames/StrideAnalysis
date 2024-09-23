@@ -59,6 +59,11 @@ public class MapTransformer : MonoBehaviour
         Vector3 rotate = new Vector3(0,rotationSliderNumber,0);
         transform.rotation = Quaternion.Euler(rotate);
     }
-
+    // void MoveMap()
+    // {
+    //     if(OVRInput.Get(OVRInput.RawButton.RThumbstickRight)){
+    //         transform.position 
+    //     }
+    // }
 
 }
