@@ -3,67 +3,49 @@ using UnityEngine.UI;
 
 public class MapTransformer : MonoBehaviour
 {
+    // UI Sliders
     public Slider scaleSlider;
     public Slider rotationSlider;
-    private float scaleSliderNumber;
-    private float rotationSliderNumber;
-    float rotationAmt = 20f;
-    float scaleAmt = 20f; 
+    public Slider positionXSlider;
+    public Slider positionYSlider;
+    public Slider positionZSlider;
+    public Slider directionSlider;
 
-    // Transform thisTransform;
-    Vector3 objectScale;
-
-    void Start() 
-    {
-        // Transform thisTransform = GetComponent<Transform>();
-        // objectScale = thisTransform.localScale;
-        
-    }
+    // Constants for adjusting scale and rotation
+    public float rotationMultiplier = 360f;
+    public float scaleMultiplier = 10f;
+    public float positionMultiplier = 10f;
 
     void Update()
     {
-        // RotateScene();
-        ApplyRotation();
-        ScaleScene();
+        // Apply transformations
+        if (scaleSlider != null) ApplyScale();
+        if (rotationSlider != null) ApplyRotation();
+        if (positionXSlider != null && positionYSlider != null && positionZSlider != null) ApplyPosition();
     }
 
-    // void RotateScene()
-    // {
-    //     if (Input.GetKey(KeyCode.S)) // TODO: change keycode to VR controller 
-    //     {
-    //         ApplyRotation(rotationAmt);
-    //     }
-    //     else if (Input.GetKey(KeyCode.D))
-    //     {
-    //         ApplyRotation(-rotationAmt);
-    //     }
-    // }
-
-    void ScaleScene()
+    // Apply scale transformation based on slider value
+    void ApplyScale()
     {
-        // TODO: change keycode to VR controller
-            scaleSliderNumber = scaleSlider.value * scaleAmt;
-            Vector3 scale = new Vector3(scaleSliderNumber, scaleSliderNumber,scaleSliderNumber);
-            transform.localScale = scale;
+        float scaleValue = scaleSlider.value * scaleMultiplier;
+        Vector3 newScale = new Vector3(scaleValue, scaleValue, scaleValue);
+        transform.localScale = newScale;
     }
 
-    // void ApplyRotation(float rotateThisFrame)
-    // {
-    //     rotationSliderNumber = rotationSlider.value * rotationAmt;
-    //     transform.Rotate(Vector3.up * Time.deltaTime * rotateThisFrame);
-    // }
-
+    // Apply rotation transformation based on slider value
     void ApplyRotation()
     {
-        rotationSliderNumber = rotationSlider.value * rotationAmt;
-        Vector3 rotate = new Vector3(0,rotationSliderNumber,0);
-        transform.rotation = Quaternion.Euler(rotate);
+        float rotationValue = rotationSlider.value * rotationMultiplier;
+        transform.rotation = Quaternion.Euler(0, rotationValue, 0);
     }
-    // void MoveMap()
-    // {
-    //     if(OVRInput.Get(OVRInput.RawButton.RThumbstickRight)){
-    //         transform.position 
-    //     }
-    // }
 
+    // Apply position transformation based on slider values
+    void ApplyPosition()
+    {
+        float xPos = positionXSlider.value * positionMultiplier;
+        float yPos = positionYSlider.value * positionMultiplier;
+        float zPos = positionZSlider.value * positionMultiplier;
+
+        transform.position = new Vector3(xPos, yPos, zPos);
+    }
 }
