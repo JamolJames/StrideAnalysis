@@ -40,7 +40,7 @@ public class PoolManager : MonoBehaviour
     private List<GameObject> pool;
     private int currentIndex = 0;
 
-    void Start()
+    void Update()
     {
         pool = new List<GameObject>();
 

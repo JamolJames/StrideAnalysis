@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Stride Analysis.unity
     guid: c78bd5674b4e649099b9322dc982c2c9
   - enabled: 0
-    path: "Assets/Samples/Meta XR Interaction \u200BSDK/67.0.1/Example Scenes/TransformerExamples.unity"
+    path: "Assets/Samples/Meta XR Interaction \u200BSDK/69.0.1/Example Scenes/TransformerExamples.unity"
     guid: 7475942f60c376744ba1ec487d140105
   - enabled: 0
     path: Assets/Dev Assets/MetaSamplesTest.unity
     guid: 0eb754a1e8f154d4cbf672cdea1afce2
+  - enabled: 0
+    path: "Assets/Samples/Meta XR Interaction \u200BSDK/69.0.1/Example Scenes/UISetExamples.unity"
+    guid: 07e3686372a704147b219707ee3c6f62
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a74157f4b00aa41f887c7ef0d58091a1, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 339bb221734cd4d279cb4e018bef9178, type: 2}
