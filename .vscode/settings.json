@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Stride Analysis.sln"
+    "dotnet.defaultSolution": "Stride Analysis.sln",
+    "dotnet.preferCSharpExtension": true
 }

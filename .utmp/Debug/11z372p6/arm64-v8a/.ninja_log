@@ -1,0 +1,23 @@
+# ninja log v5
+4	454	1732205541333873896	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	97e85c1dad530903
+454	710	1732205541588397527	/Users/jamzium/Desktop/Unity/Stride Analysis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/11z372p6/obj/arm64-v8a/libswappywrapper.so	f864cd2064c0d700
+4	846	1732205541727759881	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	fd2ef4a89c37ab73
+3	831	1732205541714488522	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	196a4eeaec8e8ea0
+2	845	1732205541726811474	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	df20f0d2f00fc5bf
+1	846	1732205541725599862	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	a5df94b2c473d94e
+3	936	1732205541819283785	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5459fe065f754dfd
+4	857	1732205541741082531	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	aebc84520ec927d0
+2	897	1732205541780991983	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a465384200176d8a
+1	968	1732205541851316028	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5e1636022a6ca0f1
+968	1079	1732205541957173613	/Users/jamzium/Desktop/Unity/Stride Analysis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/11z372p6/obj/arm64-v8a/libgame.so	7ae33c739ea5141e
+11	723	1732566669674118870	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	97e85c1dad530903
+723	1023	1732566669966717722	/Users/jamzium/Desktop/Unity/Stride Analysis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/11z372p6/obj/arm64-v8a/libswappywrapper.so	f864cd2064c0d700
+9	1079	1732566670029788851	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	196a4eeaec8e8ea0
+8	1087	1732566670038839708	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	df20f0d2f00fc5bf
+7	1087	1732566670038205043	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	a5df94b2c473d94e
+9	1088	1732566670041105995	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	fd2ef4a89c37ab73
+10	1104	1732566670056187174	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	aebc84520ec927d0
+8	1127	1732566670079169797	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	a465384200176d8a
+8	1185	1732566670136340437	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5459fe065f754dfd
+6	1225	1732566670176253360	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5e1636022a6ca0f1
+1225	1337	1732566670284155902	/Users/jamzium/Desktop/Unity/Stride Analysis/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/11z372p6/obj/arm64-v8a/libgame.so	7ae33c739ea5141e
