@@ -1,0 +1,8 @@
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/CMakeFiles/edit_cache.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/Volumes/Library/Unity/Stride Analysis/.utmp/RelWithDebInfo/4p233x6c/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir
